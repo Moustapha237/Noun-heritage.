@@ -1,0 +1,73 @@
+.shop-page {
+  padding: 56px 0 100px;
+}
+
+.shop-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 620px;
+  margin-bottom: 36px;
+}
+
+.shop-header h1 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+}
+
+.shop-header p {
+  font-size: 15px;
+  color: rgba(26, 20, 16, 0.6);
+  line-height: 1.6;
+}
+
+.shop-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.shop-filter {
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(26, 20, 16, 0.18);
+  background: transparent;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  transition: all 0.2s ease;
+}
+
+.shop-filter:hover {
+  border-color: var(--ink);
+}
+
+.shop-filter.active {
+  background: var(--ink);
+  color: var(--cream);
+  border-color: var(--ink);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px 24px;
+}
+
+.shop-empty {
+  padding: 60px 0;
+  text-align: center;
+  color: rgba(26, 20, 16, 0.5);
+}
+
+@media (min-width: 640px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

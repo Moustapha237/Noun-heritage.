@@ -1,0 +1,70 @@
+.static-page {
+  padding: 56px 0 100px;
+  max-width: 720px;
+}
+
+.static-page h1 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  margin: 10px 0 20px;
+  line-height: 1.1;
+}
+
+.static-lead {
+  font-size: 16.5px;
+  line-height: 1.7;
+  color: rgba(26, 20, 16, 0.72);
+  margin-bottom: 36px;
+}
+
+.static-block {
+  margin-bottom: 32px;
+}
+
+.static-block h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.static-block p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(26, 20, 16, 0.68);
+}
+
+.static-block ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+
+.static-block li {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(26, 20, 16, 0.68);
+  margin-bottom: 6px;
+}
+
+.contact-card {
+  margin-top: 20px;
+  background: var(--cream-dim);
+  border-radius: var(--radius-l);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-card a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14.5px;
+  font-weight: 500;
+  padding: 12px 14px;
+  border: 1px solid rgba(26, 20, 16, 0.15);
+  border-radius: var(--radius-s);
+  transition: border-color 0.2s ease;
+}
+
+.contact-card a:hover {
+  border-color: var(--ochre);
+}
